@@ -9,8 +9,12 @@ Author URI: https://automattic.com/wordpress-plugins/
 License: GPLv2 or later
 Text Domain: akismet
 */
+
  //Exit if Accessed Directly
 
  if(!defined('ABSPATH')){
      exit;
  }
+
+ //Load Scripts
+ require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-scripts.php');
