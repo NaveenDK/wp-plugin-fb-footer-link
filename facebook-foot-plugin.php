@@ -18,3 +18,6 @@ Text Domain: akismet
 
  //Load Scripts
  require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-scripts.php');
+
+  //Load Content
+  require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-content.php');
