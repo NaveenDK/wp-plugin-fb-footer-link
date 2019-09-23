@@ -15,9 +15,19 @@ Text Domain: akismet
  if(!defined('ABSPATH')){
      exit;
  }
+//Global Options Variable
+$ffl_options = get_option('ffl_settings');
 
  //Load Scripts
  require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-scripts.php');
 
   //Load Content
   require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-content.php');
+
+if(is_admin()){
+     //Load Settings
+  require_once(plugin_dir_path(__FILE__).'/includes/facebook-foot-plugin-settings.php');
+
+}
+
+ 
